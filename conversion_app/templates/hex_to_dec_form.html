@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Hex to Dec Converter</title>
+</head>
+<body>
+    <h1>Hex to Dec Converter</h1>
+    <form action="/hex-to-dec/" method="post">
+        <label for="hex">Hex Number:</label>
+        <input type="text" id="hex" name="hex" required>
+        <button type="submit">Convert</button>
+    </form>
+    {% if dec_number %}
+        <p>Decimal Number: {{ dec_number }}</p>
+    {% endif %}
+</body>
+</html>
